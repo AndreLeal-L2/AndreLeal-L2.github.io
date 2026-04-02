@@ -72,6 +72,7 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
                 'Tempo de Carga <2s',
               ]}
               ctaText="Solicitar Orçamento"
+              isPopular={true}
               onCtaClick={() => handlePlanClick('Plano Presença')}
             />
           </div>
@@ -94,7 +95,6 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
                 'Tempo de Carga <2s',
                 'Suporte Prioritário',
               ]}
-              isPopular={true}
               ctaText="Solicitar Orçamento"
               onCtaClick={() => handlePlanClick('Plano Profissional')}
             />
