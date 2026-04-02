@@ -1,5 +1,6 @@
 'use client'
 
+import { PricingSection } from '@/components/PricingSection'
 import { useState } from 'react'
 
 export default function Home() {
@@ -63,7 +64,7 @@ export default function Home() {
             Arara Web
           </h1>
           <h2 className="text-2xl md:text-4xl font-serif text-soft-gold mb-8">
-            Presença Digital Profissional para Empresas Locais
+            Presença Digital de Elite para Negócios Locais
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
             Sites rápidos, seguros e em conformidade com o RGPD
@@ -192,10 +193,13 @@ export default function Home() {
           </h2>
           <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto leading-relaxed">
             A sua presença digital não pode depender de aluguel. É tempo de ser dono do seu terreno digital.
-            Criamos soluções web que colocam o seu negócio no mapa digital, com profissionalismo e resultados mensuráveis.
+            Criamos soluções web profissionais para Pequenas e Médias Empresas (PMEs), 
+            com resultados mensuráveis e crescimento sustentável.
           </p>
         </div>
       </section>
+
+      <PricingSection />
 
       {/* Contact Section */}
       <section id="contact" className="section-padding bg-deep-black">
@@ -295,12 +299,11 @@ export default function Home() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-dark-gray border border-gray-700 rounded-lg text-white focus:outline-none focus:border-soft-gold transition-colors"
                   >
-                    <option value="">Selecione um serviço</option>
-                    <option value="web-design">Web Design Premium</option>
-                    <option value="seo">SEO Local</option>
-                    <option value="rgpd">Consultoria RGPD</option>
-                    <option value="performance">Otimização de Performance</option>
-                    <option value="complete">Solução Completa</option>
+                    <option value="">Selecione um plano</option>
+                    <option value="plano-presenca">Plano Presença (249€ + 15€/mês)</option>
+                    <option value="plano-profissional">Plano Profissional (449€ + 20€/mês)</option>
+                    <option value="plano-gestao">Plano Gestão Total (599€ + 49€/mês)</option>
+                    <option value="custom">Orçamento Personalizado</option>
                   </select>
                 </div>
                 
