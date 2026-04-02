@@ -242,7 +242,7 @@ export default function Home() {
                     value={formData.message}
                     onChange={handleChange}
                     className="input-gold resize-none"
-                    placeholder="Descreva o seu projeto, objetivos ou dúvidas..."
+                    placeholder="Diga-nos um pouco sobre o seu negócio (ex: sou dono de uma barbearia e gostaria de incluir o serviço de fotografia)."
                   />
                 </div>
                 

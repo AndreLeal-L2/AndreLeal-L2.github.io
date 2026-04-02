@@ -52,20 +52,21 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
-          {/* Card 1: Plano Presença */}
+          {/* Card 1: Plano Presença - Updated with Barbearias */}
           <div className="animate-on-scroll" style={{ transitionDelay: '0ms' }}>
             <PricingCard
               name="Plano Presença"
               subtitle='O "Menu Digital"'
-              idealFor="Restaurantes, Cafés, Bares, Pequenos Comércios"
+              idealFor="Restaurantes, Cafés, Bares, Barbearias e Pequenos Comércios"
               setupCost={249}
               monthlyCost={15}
               monthlyDescription="Alojamento/Manutenção"
               features={[
                 'Página Única Premium (Landing Page)',
                 'Menu/Catálogo Digital Visual Otimizado',
+                'Visualização de Menus ou Catálogos de Serviços/Cortes',
                 'Formulário de Reserva via Formspree',
-                'Botão Flutuante de WhatsApp',
+                'Botão Flutuante de WhatsApp (perfeito para barbearias)',
                 'Integração com Google Maps',
                 '100% RGPD Compliant',
                 'Tempo de Carga <2s',
