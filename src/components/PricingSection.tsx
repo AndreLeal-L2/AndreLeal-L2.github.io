@@ -50,8 +50,8 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8 items-stretch">
+        {/* Pricing Cards - Improved mobile spacing */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 lg:gap-8 items-stretch">
           {/* Card 1: Plano Presença - Updated with Barbearias */}
           <div className="animate-on-scroll" style={{ transitionDelay: '0ms' }}>
             <PricingCard
