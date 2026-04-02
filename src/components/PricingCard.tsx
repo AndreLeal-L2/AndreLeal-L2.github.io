@@ -68,8 +68,8 @@ export function PricingCard({
             <span className="text-5xl font-bold text-soft-gold text-shadow-gold">{setupCost}€</span>
           </div>
           <span className="text-sm text-gray-400 block mb-3">Pagamento Único</span>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 bg-forest-green/30 px-2 sm:px-4 py-2 rounded-full">
-            <span className="text-green-400 font-bold text-sm sm:text-lg whitespace-nowrap">+ {monthlyCost}€/mês</span>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-2 bg-forest-green/30 px-2 lg:px-4 py-2 rounded-full">
+            <span className="text-green-400 font-bold text-sm lg:text-lg whitespace-nowrap">+ {monthlyCost}€/mês</span>
             <span className="text-gray-500 text-xs whitespace-nowrap">({monthlyDescription})</span>
           </div>
         </div>
