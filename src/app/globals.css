@@ -20,27 +20,27 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-soft-gold text-deep-black px-8 py-4 rounded-sm font-semibold 
+    @apply bg-soft-gold text-deep-black px-6 py-3 md:px-8 md:py-4 rounded-sm font-semibold 
            hover:bg-light-gold transition-all duration-300 transform hover:scale-105
-           inline-block;
+           inline-block text-sm md:text-base;
   }
   
   .btn-secondary {
-    @apply border border-soft-gold text-soft-gold px-8 py-4 rounded-sm font-semibold 
+    @apply border border-soft-gold text-soft-gold px-6 py-3 md:px-8 md:py-4 rounded-sm font-semibold 
            hover:bg-soft-gold hover:text-deep-black transition-all duration-300
-           inline-block;
+           inline-block text-sm md:text-base;
   }
   
   .section-padding {
-    @apply py-20 px-4 md:px-8 lg:px-16;
+    @apply py-12 md:py-20 px-4 md:px-8 lg:px-16;
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
   .card-dark {
-    @apply bg-dark-gray border border-gray-800 rounded-lg p-6 
+    @apply bg-dark-gray border border-gray-800 rounded-lg p-4 md:p-6 
            hover:border-soft-gold transition-all duration-300;
   }
   
@@ -49,5 +49,35 @@
       radial-gradient(circle at 20% 80%, rgba(201, 169, 94, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, rgba(43, 58, 43, 0.3) 0%, transparent 50%),
       radial-gradient(circle at 40% 40%, rgba(201, 169, 94, 0.05) 0%, transparent 50%);
+  }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .card-dark {
+    padding: 1rem !important;
+  }
+  
+  .section-padding {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  input, textarea, select {
+    font-size: 16px !important; /* Prevents zoom on iOS */
   }
 }
