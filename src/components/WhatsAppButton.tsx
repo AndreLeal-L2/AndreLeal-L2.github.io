@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false)
-  const phoneNumber = '351910000000' // Placeholder - should be updated with actual number
+  const phoneNumber = '351928042048' // Arara Web contact number
   const message = 'Olá! Tenho interesse nos serviços da Arara Web.'
 
   const handleClick = () => {
