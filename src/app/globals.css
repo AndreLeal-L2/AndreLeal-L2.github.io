@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-deep-black text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-soft-gold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-soft-gold text-deep-black px-8 py-4 rounded-sm font-semibold 
+           hover:bg-light-gold transition-all duration-300 transform hover:scale-105
+           inline-block;
+  }
+  
+  .btn-secondary {
+    @apply border border-soft-gold text-soft-gold px-8 py-4 rounded-sm font-semibold 
+           hover:bg-soft-gold hover:text-deep-black transition-all duration-300
+           inline-block;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .card-dark {
+    @apply bg-dark-gray border border-gray-800 rounded-lg p-6 
+           hover:border-soft-gold transition-all duration-300;
+  }
+  
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(201, 169, 94, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(43, 58, 43, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(201, 169, 94, 0.05) 0%, transparent 50%);
+  }
+}
