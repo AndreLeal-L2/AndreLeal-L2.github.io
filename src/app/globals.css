@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   html {
@@ -11,10 +11,16 @@
   
   body {
     @apply bg-deep-black text-white font-sans antialiased;
+    line-height: 1.7;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif text-soft-gold;
+    line-height: 1.2;
+  }
+  
+  p {
+    line-height: 1.8;
   }
 }
 
@@ -31,6 +37,12 @@
            inline-block text-sm md:text-base;
   }
   
+  .btn-gold-solid {
+    @apply bg-soft-gold text-deep-black px-6 py-4 rounded-lg font-semibold 
+           hover:bg-light-gold transition-all duration-300 transform hover:scale-105
+           inline-block text-center w-full;
+  }
+  
   .section-padding {
     @apply py-12 md:py-20 px-4 md:px-8 lg:px-16;
   }
@@ -44,12 +56,100 @@
            hover:border-soft-gold transition-all duration-300;
   }
   
+  .card-feature {
+    @apply relative bg-gradient-to-b from-dark-gray/80 to-dark-gray rounded-xl p-6 
+           transition-all duration-500 overflow-hidden;
+    border: 0.5px solid rgba(201, 169, 94, 0.2);
+  }
+  
+  .card-feature:hover {
+    border-color: rgba(201, 169, 94, 0.6);
+    box-shadow: 0 0 30px rgba(201, 169, 94, 0.15);
+    transform: translateY(-4px);
+  }
+  
+  .card-feature:hover .feature-icon {
+    transform: scale(1.05);
+    color: #d4af37;
+  }
+  
+  .feature-icon {
+    @apply transition-all duration-300;
+  }
+  
   .hero-pattern {
     background-image: 
       radial-gradient(circle at 20% 80%, rgba(201, 169, 94, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, rgba(43, 58, 43, 0.3) 0%, transparent 50%),
       radial-gradient(circle at 40% 40%, rgba(201, 169, 94, 0.05) 0%, transparent 50%);
   }
+  
+  .input-gold {
+    @apply w-full px-4 py-3 bg-dark-gray border-0 border-b-2 border-gray-700 
+           rounded-t-lg text-white placeholder-gray-500 focus:outline-none 
+           focus:border-soft-gold transition-all duration-300;
+  }
+  
+  .input-gold:focus {
+    background: linear-gradient(to bottom, #1a1a1a, rgba(201, 169, 94, 0.05));
+  }
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(201, 169, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(201, 169, 94, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.whatsapp-pulse {
+  animation: pulse-gold 2s infinite;
+}
+
+/* Typography Enhancements */
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.text-shadow-gold {
+  text-shadow: 0 2px 20px rgba(201, 169, 94, 0.3);
+}
+
+/* Gradient Overlays */
+.gradient-overlay {
+  background: linear-gradient(180deg, 
+    rgba(10, 10, 10, 0) 0%, 
+    rgba(10, 10, 10, 0.8) 50%,
+    rgba(10, 10, 10, 1) 100%);
 }
 
 /* Mobile-specific improvements */
@@ -68,7 +168,7 @@
     font-size: 1.25rem !important;
   }
   
-  .card-dark {
+  .card-dark, .card-feature {
     padding: 1rem !important;
   }
   
@@ -78,6 +178,24 @@
   }
   
   input, textarea, select {
-    font-size: 16px !important; /* Prevents zoom on iOS */
+    font-size: 16px !important;
   }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b3a2b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a95e;
 }
