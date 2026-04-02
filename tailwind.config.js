@@ -12,7 +12,7 @@ module.exports = {
         'dark-gray': '#1a1a1a',
         'soft-gold': '#c9a95e',
         'light-gold': '#d4af37',
-        'forest-green': '#2b3a2b',
+        'forest-green': '#5a8a6a',
       },
       fontFamily: {
         serif: ['Playfair Display', 'Georgia', 'serif'],
