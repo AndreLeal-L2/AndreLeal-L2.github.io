@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { PricingSection } from '@/components/PricingSection'
 import { ServicesSection } from '@/components/ServicesSection'
 import { PropriedadeVsAluguer } from '@/components/PropriedadeVsAluguer'
@@ -63,9 +64,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-deep-black/50 to-deep-black" />
         
         <div className="relative z-10 container-custom text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-soft-gold mb-6 text-shadow-gold">
-            Arara Web
-          </h1>
+          {/* Logo Image */}
+          <div className="mb-8 flex justify-center">
+            <Image
+              src="/logo.png"
+              alt="Arara Web Logo"
+              width={300}
+              height={300}
+              className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain"
+              priority
+            />
+          </div>
+          
           <h2 className="text-2xl md:text-4xl font-serif text-soft-gold mb-8 leading-tight">
             Presença Digital de Elite<br className="hidden md:block" /> para Negócios Locais
           </h2>
