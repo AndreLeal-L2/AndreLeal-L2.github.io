@@ -58,7 +58,7 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
               name="Plano Presença"
               subtitle='O "Menu Digital"'
               idealFor="Restaurantes, Cafés, Bares, Barbearias e Pequenos Comércios"
-              setupCost={100}
+              setupCost={97}
               monthlyCost={15}
               monthlyDescription="Alojamento/Manutenção"
               features={[
@@ -82,7 +82,7 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
               name="Plano Profissional"
               subtitle='O "Crescimento"'
               idealFor="Clínicas, Escritórios, Prestadores de Serviço"
-              setupCost={150}
+              setupCost={149}
               monthlyCost={20}
               monthlyDescription="Alojamento/Manutenção"
               features={[
@@ -105,7 +105,7 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
               name="Plano Gestão Total"
               subtitle='O "Chave na Mão"'
               idealFor="Negócios que precisam de gestão digital completa"
-              setupCost={250}
+              setupCost={249}
               monthlyCost={49}
               monthlyDescription="Gestão Ativa"
               features={[

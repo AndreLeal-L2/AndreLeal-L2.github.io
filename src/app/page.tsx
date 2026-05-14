@@ -233,9 +233,9 @@ export default function Home() {
                     className="input-gold"
                   >
                     <option value="">Selecione um plano</option>
-                    <option value="plano-presenca">Plano Presença (100€ + 15€/mês)</option>
-                    <option value="plano-profissional">Plano Profissional (150€ + 20€/mês)</option>
-                    <option value="plano-gestao">Plano Gestão Total (250€ + 49€/mês)</option>
+                    <option value="plano-presenca">Plano Presença (97€ + 15€/mês)</option>
+                    <option value="plano-profissional">Plano Profissional (149€ + 20€/mês)</option>
+                    <option value="plano-gestao">Plano Gestão Total (249€ + 49€/mês)</option>
                     <option value="custom">Orçamento Personalizado</option>
                   </select>
                 </div>
